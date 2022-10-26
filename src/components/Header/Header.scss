@@ -1,4 +1,6 @@
 .root {
+  position: sticky;
+  top: 0;
   background-color: #4f27bf;
   color: white;
   height: 80px;
@@ -22,6 +24,7 @@
     padding: 0;
     color: white;
     cursor: pointer;
+    font: inherit;
   }
 
   .content-auth {

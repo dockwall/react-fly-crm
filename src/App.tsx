@@ -1,4 +1,5 @@
 import React from "react";
+import "./assets/styles/index.scss";
 import Header from "./components/Header/Header";
 
 const App = () => {

@@ -8,7 +8,6 @@ const App = () => {
     <React.StrictMode>
       <Header />
       <AsideMenu />
-      <div>Hello!</div>
     </React.StrictMode>
   );
 };

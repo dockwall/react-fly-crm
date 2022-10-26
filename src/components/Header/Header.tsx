@@ -5,8 +5,8 @@ import Logo from "./img/Logo.svg";
 
 const Header = () => {
   return (
-    <div className="root">
-      <div className="content">
+    <div className="header-root">
+      <div className="header-content">
         <button type="button" className="header__button">
           <img src={Logo} alt="Wrench CRM" />
         </button>

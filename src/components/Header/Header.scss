@@ -1,0 +1,21 @@
+.root {
+  background-color: #4f27bf;
+  height: 80px;
+  padding: 0 32px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+
+  .content-label {
+    color: white;
+  }
+
+  .content-auth {
+    color: white;
+  }
+}

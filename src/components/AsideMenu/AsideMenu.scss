@@ -53,10 +53,16 @@
 
   .settings-dropdown__image {
     margin-left: 67px;
+    transform: rotate(180deg);
+  }
+
+  .opened {
+    transform: none;
   }
 
   span {
     margin-left: 16px;
     font-weight: 600;
+    text-align: left;
   }
 }

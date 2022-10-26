@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Dropdown from "./Dropdown";
+import Dropdown from "./Dropdown/Dropdown";
 import "./AsideMenu.scss";
 import mainImage from "./img/main.svg";
 import searchImage from "./img/search.svg";
@@ -70,10 +70,17 @@ const AsideMenu = () => {
           <img
             src={settingsDropdownImage}
             alt=""
-            className="settings-dropdown__image"
+            className={`settings-dropdown__image ${
+              isDropdownActive ? "opened" : ""
+            }`}
           ></img>
         </button>
-        {isDropdownActive ? <Dropdown /> : null}
+        {isDropdownActive ? (
+          <Dropdown
+            isDropdownActive={isDropdownActive}
+            onClick={setIsDropdownActive}
+          />
+        ) : null}
         <button
           type="button"
           className="menu-content__button menu-content-element"

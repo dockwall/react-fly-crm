@@ -12,25 +12,23 @@
   justify-content: space-between;
   height: 100%;
 
-  .content-label {
-    .content-label__button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      outline: none;
-      background: none;
-      border: none;
-      padding: 0;
-      color: white;
-      cursor: pointer;
-
-      .content-label__button__img {
-        margin-right: 24px;
-      }
-    }
+  .header__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    outline: none;
+    background: none;
+    border: none;
+    padding: 0;
+    color: white;
+    cursor: pointer;
   }
 
   .content-auth {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 217px;
   }
 }

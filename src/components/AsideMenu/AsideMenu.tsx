@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Dropdown from "./Dropdown";
 import "./AsideMenu.scss";
 import mainImage from "./img/main.svg";
 import searchImage from "./img/search.svg";
@@ -7,9 +8,12 @@ import calendarImage from "./img/calendar.svg";
 import mapsImage from "./img/maps.svg";
 import widgetsImage from "./img/widgets.svg";
 import settingsImage from "./img/settings.svg";
+import settingsDropdownImage from "./img/settings-dropdown.svg";
 import exitImage from "./img/exit.svg";
 
 const AsideMenu = () => {
+  const [isDropdownActive, setIsDropdownActive] = useState(false);
+
   return (
     <div className="menu-root">
       <div className="menu-content">
@@ -59,10 +63,17 @@ const AsideMenu = () => {
         <button
           type="button"
           className="menu-content__button menu-content-element"
+          onClick={() => setIsDropdownActive(!isDropdownActive)}
         >
           <img src={settingsImage} alt="Настройки" />
           <span>Настройки</span>
+          <img
+            src={settingsDropdownImage}
+            alt=""
+            className="settings-dropdown__image"
+          ></img>
         </button>
+        {isDropdownActive ? <Dropdown /> : null}
         <button
           type="button"
           className="menu-content__button menu-content-element"

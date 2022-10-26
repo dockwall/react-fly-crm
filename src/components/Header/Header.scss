@@ -1,5 +1,6 @@
 .root {
   background-color: #4f27bf;
+  color: white;
   height: 80px;
   padding: 0 32px;
 }
@@ -12,10 +13,24 @@
   height: 100%;
 
   .content-label {
-    color: white;
+    .content-label__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+      background: none;
+      border: none;
+      padding: 0;
+      color: white;
+      cursor: pointer;
+
+      .content-label__button__img {
+        margin-right: 24px;
+      }
+    }
   }
 
   .content-auth {
-    color: white;
+    display: flex;
   }
 }

@@ -1,7 +1,13 @@
 import React from "react";
+import Header from "./components/Header/Header";
 
 const App = () => {
-  return <h1>Hello!</h1>;
+  return (
+    <React.StrictMode>
+      <Header />
+      Hello!
+    </React.StrictMode>
+  );
 };
 
 export default App;

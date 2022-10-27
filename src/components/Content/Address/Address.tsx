@@ -21,15 +21,15 @@ const Address = () => {
       body: JSON.stringify({ query: searchTerm }),
     };
 
-    const response: any = await fetch(
+    await fetch(
       "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address",
       options
     )
       .then((response) => response.text())
-      .then((result) => console.log(result))
+      .then((result) => {
+        setSearchResults(result);
+      })
       .catch((error) => console.log("error", error));
-
-    setSearchResults(response);
   };
 
   return (

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown/Dropdown";
 import "./AsideMenu.scss";
 import mainImage from "./img/main.svg";
@@ -18,52 +19,59 @@ const AsideMenu = () => {
     <div className="menu-root">
       <div className="menu-content">
         <p className="menu-content-title">Меню</p>
-        <button
+        <Link
           type="button"
           className="menu-content__button menu-content-element"
+          to="/"
         >
           <img src={mainImage} alt="Главная" />
           <span>Главная</span>
-        </button>
-        <button
+        </Link>
+        <Link
           type="button"
           className="menu-content__button menu-content-element"
+          to="/address"
         >
           <img src={searchImage} alt="Поиск адресов" />
           <span>Поиск адресов</span>
-        </button>
-        <button
+        </Link>
+        <Link
           type="button"
           className="menu-content__button menu-content-element"
+          to="/"
         >
           <img src={tablesImage} alt="Таблицы" />
           <span>Таблицы</span>
-        </button>
-        <button
+        </Link>
+        <Link
           type="button"
           className="menu-content__button menu-content-element"
+          to="/"
         >
           <img src={calendarImage} alt="Календарь" />
           <span>Календарь</span>
-        </button>
-        <button
+        </Link>
+        <Link
           type="button"
           className="menu-content__button menu-content-element cards"
+          to="/"
         >
           <img src={mapsImage} alt="Карты" className="cards__image" />
           <span>Карты</span>
-        </button>
-        <button
+        </Link>
+        <Link
           type="button"
           className="menu-content__button menu-content-element"
+          to="/"
         >
           <img src={widgetsImage} alt="Виджеты" />
           <span>Виджеты</span>
-        </button>
-        <button
+        </Link>
+        <Link
           type="button"
           className="menu-content__button menu-content-element"
           onClick={() => setIsDropdownActive(!isDropdownActive)}
+          to="/"
         >
           <img src={settingsImage} alt="Настройки" />
           <span>Настройки</span>
@@ -74,20 +82,21 @@ const AsideMenu = () => {
               isDropdownActive ? "opened" : ""
             }`}
           ></img>
-        </button>
+        </Link>
         {isDropdownActive ? (
           <Dropdown
             isDropdownActive={isDropdownActive}
             onClick={setIsDropdownActive}
           />
         ) : null}
-        <button
+        <Link
           type="button"
           className="menu-content__button menu-content-element"
+          to="/"
         >
           <img src={exitImage} alt="Выход" />
           <span>Выход</span>
-        </button>
+        </Link>
       </div>
     </div>
   );

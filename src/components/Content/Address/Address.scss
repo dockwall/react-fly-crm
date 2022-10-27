@@ -23,14 +23,15 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: flex-start;
-        padding: 24px 0;
+        justify-content: space-between;
+        padding: 0;
+        margin: 24px 0 32px 0;
         flex-wrap: wrap;
         width: 100%;
 
         .form__input {
           width: 100%;
-          max-width: 835px;
+          max-width: calc(100% - 217px - 24px);
           margin: 0;
           margin-right: 24px;
           padding: 20px 0;

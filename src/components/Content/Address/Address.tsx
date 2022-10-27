@@ -28,7 +28,7 @@ const Address = () => {
     )
       .then((response) => response.text())
       .then((result) => {
-        setSearchResults(result);
+        setSearchResults(JSON.parse(result));
       })
       .catch((error) => console.log("error", error));
   };
@@ -59,7 +59,7 @@ const Address = () => {
           </div>
         </fieldset>
       </form>
-      {searchResults ? <AddressesList /> : null}
+      {searchResults ? <AddressesList searchResults={searchResults} /> : null}
     </div>
   );
 };

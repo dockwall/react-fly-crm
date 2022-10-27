@@ -1,9 +1,28 @@
 import React from "react";
+import "./AddressesList.scss";
 
-const AddressesList = () => {
+interface props {
+  searchResults: any;
+}
+
+const AddressesList = (props: props) => {
+  const renderedAddresses = props.searchResults.suggestions.map(
+    (element: any) => {
+      return (
+        <div
+          key={element.unrestricted_value}
+          className="addresses-list-element"
+        >
+          <p>{element.value}</p>
+        </div>
+      );
+    }
+  );
+
   return (
-    <div>
-      <h1>Hello!</h1>
+    <div className="addresses-list-root">
+      <h1 className="addresses-list-title">Адреса</h1>
+      {renderedAddresses}
     </div>
   );
 };

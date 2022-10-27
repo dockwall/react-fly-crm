@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-fly-crm/static/css/main.64733996.css",
-    "main.js": "/react-fly-crm/static/js/main.75f30c15.js",
+    "main.js": "/react-fly-crm/static/js/main.b6aeb3c2.js",
     "static/media/Montserrat-Regular.ttf": "/react-fly-crm/static/media/Montserrat-Regular.2a2d37bf7680d86811db.ttf",
     "static/media/Logo.svg": "/react-fly-crm/static/media/Logo.6060bf5f3b93e032fdc8fa2570c97257.svg",
     "static/media/settings.svg": "/react-fly-crm/static/media/settings.b2d779234efd094f46a9a93e3e732fc1.svg",
@@ -19,10 +19,10 @@
     "static/media/widgets.svg": "/react-fly-crm/static/media/widgets.8209a98e37a46caedd5606f931925dbd.svg",
     "static/media/settings-dropdown.svg": "/react-fly-crm/static/media/settings-dropdown.77e43cd7d9b7c2478fc6af8795634e50.svg",
     "main.64733996.css.map": "/react-fly-crm/static/css/main.64733996.css.map",
-    "main.75f30c15.js.map": "/react-fly-crm/static/js/main.75f30c15.js.map"
+    "main.b6aeb3c2.js.map": "/react-fly-crm/static/js/main.b6aeb3c2.js.map"
   },
   "entrypoints": [
     "static/css/main.64733996.css",
-    "static/js/main.75f30c15.js"
+    "static/js/main.b6aeb3c2.js"
   ]
 }

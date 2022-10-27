@@ -1,10 +1,11 @@
 import React, { FormEvent, useState } from "react";
 import "./Address.scss";
+import AddressesList from "./AddressesList/AddressesList";
 import SearchImage from "./img/Search.svg";
 
 const Address = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [searchResults, setSearchResults] = useState({});
+  const [searchResults, setSearchResults] = useState("");
 
   const onAddressSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -58,6 +59,7 @@ const Address = () => {
           </div>
         </fieldset>
       </form>
+      {searchResults ? <AddressesList /> : null}
     </div>
   );
 };

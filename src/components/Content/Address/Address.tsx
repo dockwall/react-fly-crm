@@ -18,6 +18,7 @@ const Address = () => {
               name="address"
               minLength={3}
               placeholder="Введите интересующий вас адрес"
+              required
             />
             <button type="submit" className="form-submit__button">
               <img src={SearchImage} alt="Поиск" className="search-icon" />

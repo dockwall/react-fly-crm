@@ -12,7 +12,13 @@
 }
 
 .content-block::-webkit-scrollbar {
-  width: 0;
+  width: 5px;
+  background-color: transparent;
+}
+
+.content-block::-webkit-scrollbar-thumb {
+  background-color: #4f27bf;
+  border-radius: 5px 0 0 5px;
 }
 
 @media (max-width: 768px) {

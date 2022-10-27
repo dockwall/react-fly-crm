@@ -1,13 +1,13 @@
 import React from "react";
 import "./assets/styles/index.scss";
 import Header from "./components/Header/Header";
-import AsideMenu from "./components/AsideMenu/AsideMenu";
+import Content from "./components/Content/Content";
 
 const App = () => {
   return (
     <React.StrictMode>
       <Header />
-      <AsideMenu />
+      <Content />
     </React.StrictMode>
   );
 };

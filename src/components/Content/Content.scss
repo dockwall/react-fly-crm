@@ -1,0 +1,22 @@
+.content-root {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 80px);
+}
+
+.content-block {
+  width: calc(100vw - 300px);
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+.content-block::-webkit-scrollbar {
+  width: 0;
+}
+
+@media (max-width: 768px) {
+  .content-block {
+    width: auto;
+  }
+}

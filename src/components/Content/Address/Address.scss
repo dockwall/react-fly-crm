@@ -1,0 +1,71 @@
+.address-root {
+  h1 {
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 26px;
+  }
+
+  .address-form {
+    .form-fieldset {
+      margin: 0;
+      padding: 0;
+      border: none;
+
+      .form__label {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+
+      .form-ui {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 24px 0;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .form__input {
+          width: 100%;
+          max-width: 835px;
+          margin: 0;
+          margin-right: 24px;
+          padding: 20px 0;
+          padding-left: 24px;
+          box-sizing: border-box;
+          font: inherit;
+          border: 3px solid #4f27bf;
+          border-radius: 10px;
+          outline: none;
+        }
+
+        .form-submit__button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          outline: none;
+          background: #4f27bf;
+          border: none;
+          padding: 0;
+          margin: 0;
+          cursor: pointer;
+          font: inherit;
+          color: white;
+          font-size: 26px;
+          font-weight: 700;
+          width: 217px;
+          height: 70px;
+          border-radius: 10px;
+
+          .search-icon {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+  }
+}

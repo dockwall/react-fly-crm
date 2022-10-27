@@ -1,7 +1,8 @@
 import React from "react";
+import Address from "./Address/Address";
+import News from "./News/News";
 import AsideMenu from "./AsideMenu/AsideMenu";
 import "./Content.scss";
-import News from "./News/News";
 
 const Content = () => {
   return (
@@ -9,7 +10,7 @@ const Content = () => {
       <AsideMenu />
 
       <div className="content-block">
-        <News />
+        <Address />
       </div>
     </div>
   );

@@ -1,14 +1,20 @@
 import React from "react";
 import "./assets/styles/index.scss";
-import Header from "./components/Header/Header";
-import Content from "./components/Content/Content";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import News from "./components/News/News";
+import Address from "./components/Address/Address";
 
 const App = () => {
   return (
-    <React.StrictMode>
-      <Header />
-      <Content />
-    </React.StrictMode>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<News />} />
+          <Route path="/address" element={<Address />} />
+        </Route>
+      </Routes>
+    </>
   );
 };
 
